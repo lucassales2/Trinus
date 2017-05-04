@@ -4,7 +4,7 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 
 import lucassales2.trinus.R;
-import lucassales2.trinus.ui.search.SearchPlayerFragment;
+import lucassales2.trinus.ui.match.MatchScoreFragment;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -15,7 +15,7 @@ public class MainActivity extends AppCompatActivity {
         if (savedInstanceState == null) {
             getSupportFragmentManager()
                     .beginTransaction()
-                    .replace(R.id.frame, new SearchPlayerFragment())
+                    .replace(R.id.frame, new MatchScoreFragment())
                     .commit();
         }
 

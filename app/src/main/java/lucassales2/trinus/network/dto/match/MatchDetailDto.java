@@ -134,10 +134,181 @@ public class MatchDetailDto {
     @SerializedName("loss")
     @Expose
     private Integer loss;
-
     @SerializedName("replay_url")
     @Expose
     private String replayUrl;
+
+    public Long getMatchId() {
+        return matchId;
+    }
+
+    public Integer getBarracksStatusDire() {
+        return barracksStatusDire;
+    }
+
+    public Integer getBarracksStatusRadiant() {
+        return barracksStatusRadiant;
+    }
+
+    public List<Chat> getChat() {
+        return chat;
+    }
+
+    public Integer getCluster() {
+        return cluster;
+    }
+
+    public Map<Integer, Integer> getCosmetics() {
+        return cosmetics;
+    }
+
+    public Integer getDireScore() {
+        return direScore;
+    }
+
+    public Integer getDuration() {
+        return duration;
+    }
+
+    public Integer getEngine() {
+        return engine;
+    }
+
+    public Integer getFirstBloodTime() {
+        return firstBloodTime;
+    }
+
+    public Integer getGameMode() {
+        return gameMode;
+    }
+
+    public Integer getHumanPlayers() {
+        return humanPlayers;
+    }
+
+    public Integer getLeagueid() {
+        return leagueid;
+    }
+
+    public Integer getLobbyType() {
+        return lobbyType;
+    }
+
+    public Long getMatchSeqNum() {
+        return matchSeqNum;
+    }
+
+    public Integer getNegativeVotes() {
+        return negativeVotes;
+    }
+
+    public List<Objectives> getObjectives() {
+        return objectives;
+    }
+
+    public List<PicksBans> getPicksBans() {
+        return picksBans;
+    }
+
+    public Integer getPositiveVotes() {
+        return positiveVotes;
+    }
+
+    public List<Integer> getRadiantGoldAdv() {
+        return radiantGoldAdv;
+    }
+
+    public Integer getRadiantScore() {
+        return radiantScore;
+    }
+
+    public Boolean getRadiantWin() {
+        return radiantWin;
+    }
+
+    public List<Integer> getRadiantXpAdv() {
+        return radiantXpAdv;
+    }
+
+    public Integer getStartTime() {
+        return startTime;
+    }
+
+    public List<Teamfights> getTeamfights() {
+        return teamfights;
+    }
+
+    public Integer getTowerStatusDire() {
+        return towerStatusDire;
+    }
+
+    public Integer getTowerStatusRadiant() {
+        return towerStatusRadiant;
+    }
+
+    public Integer getVersion() {
+        return version;
+    }
+
+    public Integer getReplaySalt() {
+        return replaySalt;
+    }
+
+    public Integer getSeriesId() {
+        return seriesId;
+    }
+
+    public Integer getSeriesType() {
+        return seriesType;
+    }
+
+    public Team getRadiantTeam() {
+        return radiantTeam;
+    }
+
+    public Team getDireTeam() {
+        return direTeam;
+    }
+
+    public League getLeague() {
+        return league;
+    }
+
+    public Integer getSkill() {
+        return skill;
+    }
+
+    public List<Player> getPlayers() {
+        return players;
+    }
+
+    public Integer getPatch() {
+        return patch;
+    }
+
+    public Integer getRegion() {
+        return region;
+    }
+
+    public Map<String, Integer> getAllWordCounts() {
+        return allWordCounts;
+    }
+
+    public MyWordCounts getMyWordCounts() {
+        return myWordCounts;
+    }
+
+    public Integer get_throw() {
+        return _throw;
+    }
+
+    public Integer getLoss() {
+        return loss;
+    }
+
+    public String getReplayUrl() {
+        return replayUrl;
+    }
 
 
 }

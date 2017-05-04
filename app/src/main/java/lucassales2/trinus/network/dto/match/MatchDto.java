@@ -10,7 +10,7 @@ import com.google.gson.annotations.SerializedName;
 public class MatchDto {
     @SerializedName("match_id")
     @Expose
-    private Integer matchId;
+    private Long matchId;
     @SerializedName("player_slot")
     @Expose
     private Integer playerSlot;
@@ -65,6 +65,82 @@ public class MatchDto {
     @SerializedName("last_hits")
     @Expose
     private Integer lastHits;
+
+    public Long getMatchId() {
+        return matchId;
+    }
+
+    public Integer getPlayerSlot() {
+        return playerSlot;
+    }
+
+    public Boolean getRadiantWin() {
+        return radiantWin;
+    }
+
+    public Integer getDuration() {
+        return duration;
+    }
+
+    public Integer getGameMode() {
+        return gameMode;
+    }
+
+    public Integer getLobbyType() {
+        return lobbyType;
+    }
+
+    public Integer getHeroId() {
+        return heroId;
+    }
+
+    public Integer getStartTime() {
+        return startTime;
+    }
+
+    public Integer getVersion() {
+        return version;
+    }
+
+    public Integer getKills() {
+        return kills;
+    }
+
+    public Integer getDeaths() {
+        return deaths;
+    }
+
+    public Integer getAssists() {
+        return assists;
+    }
+
+    public Integer getSkill() {
+        return skill;
+    }
+
+    public Integer getXpPerMin() {
+        return xpPerMin;
+    }
+
+    public Integer getGoldPerMin() {
+        return goldPerMin;
+    }
+
+    public Integer getHeroDamage() {
+        return heroDamage;
+    }
+
+    public Integer getTowerDamage() {
+        return towerDamage;
+    }
+
+    public Integer getHeroHealing() {
+        return heroHealing;
+    }
+
+    public Integer getLastHits() {
+        return lastHits;
+    }
 
 
 }

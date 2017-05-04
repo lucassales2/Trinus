@@ -337,7 +337,7 @@ public class Player {
     private Boolean isRoaming;
     @SerializedName("purchase_time")
     @Expose
-    private PurchaseTime purchaseTime;
+    private Map<String, Integer> purchaseTime;
     @SerializedName("first_purchase_time")
     @Expose
     private Item firstPurchaseTime;
@@ -365,6 +365,482 @@ public class Player {
     @SerializedName("benchmarks")
     @Expose
     private Map<String, Benchmarks> benchmarks;
+
+    public Long getMatchId() {
+        return matchId;
+    }
+
+    public Integer getPlayerSlot() {
+        return playerSlot;
+    }
+
+    public List<Integer> getAbilityUpgradesArr() {
+        return abilityUpgradesArr;
+    }
+
+    public Map<String, Integer> getAbilityUses() {
+        return abilityUses;
+    }
+
+    public Long getAccountId() {
+        return accountId;
+    }
+
+    public Map<Integer, Integer> getActions() {
+        return actions;
+    }
+
+    public AdditionalUnits getAdditionalUnits() {
+        return additionalUnits;
+    }
+
+    public Integer getAssists() {
+        return assists;
+    }
+
+    public Integer getBackpack0() {
+        return backpack0;
+    }
+
+    public Integer getBackpack1() {
+        return backpack1;
+    }
+
+    public Integer getBackpack2() {
+        return backpack2;
+    }
+
+    public List<BuyBackLog> getBuybackLog() {
+        return buybackLog;
+    }
+
+    public Integer getCampsStacked() {
+        return campsStacked;
+    }
+
+    public Integer getCreepsStacked() {
+        return creepsStacked;
+    }
+
+    public Map<String, Integer> getDamage() {
+        return damage;
+    }
+
+    public Map<String, Integer> getDamageInflictor() {
+        return damageInflictor;
+    }
+
+    public Map<String, Integer> getDamageInflictorReceived() {
+        return damageInflictorReceived;
+    }
+
+    public Map<String, Integer> getDamageTaken() {
+        return damageTaken;
+    }
+
+    public Integer getDeaths() {
+        return deaths;
+    }
+
+    public Integer getDenies() {
+        return denies;
+    }
+
+    public List<Object> getDnT() {
+        return dnT;
+    }
+
+    public Integer getGold() {
+        return gold;
+    }
+
+    public Integer getGoldPerMin() {
+        return goldPerMin;
+    }
+
+    public GoldReasons getGoldReasons() {
+        return goldReasons;
+    }
+
+    public Integer getGoldSpent() {
+        return goldSpent;
+    }
+
+    public List<Object> getGoldT() {
+        return goldT;
+    }
+
+    public Integer getHeroDamage() {
+        return heroDamage;
+    }
+
+    public Integer getHeroHealing() {
+        return heroHealing;
+    }
+
+    public HeroHits getHeroHits() {
+        return heroHits;
+    }
+
+    public Integer getHeroId() {
+        return heroId;
+    }
+
+    public Integer getItem0() {
+        return item0;
+    }
+
+    public Integer getItem1() {
+        return item1;
+    }
+
+    public Integer getItem2() {
+        return item2;
+    }
+
+    public Integer getItem3() {
+        return item3;
+    }
+
+    public Integer getItem4() {
+        return item4;
+    }
+
+    public Integer getItem5() {
+        return item5;
+    }
+
+    public ItemUses getItemUses() {
+        return itemUses;
+    }
+
+    public KillStreaks getKillStreaks() {
+        return killStreaks;
+    }
+
+    public Map<String, Integer> getKilled() {
+        return killed;
+    }
+
+    public Map<String, Integer> getKilledBy() {
+        return killedBy;
+    }
+
+    public Integer getKills() {
+        return kills;
+    }
+
+    public List<KillLog> getKillsLog() {
+        return killsLog;
+    }
+
+    public Map<Integer, Map<Integer, Integer>> getLanePos() {
+        return lanePos;
+    }
+
+    public Integer getLastHits() {
+        return lastHits;
+    }
+
+    public Integer getLeaverStatus() {
+        return leaverStatus;
+    }
+
+    public Integer getLevel() {
+        return level;
+    }
+
+    public List<Object> getLhT() {
+        return lhT;
+    }
+
+    public LifeState getLifeState() {
+        return lifeState;
+    }
+
+    public MaxHeroHit getMaxHeroHit() {
+        return maxHeroHit;
+    }
+
+    public MultiKills getMultiKills() {
+        return multiKills;
+    }
+
+    public Obs getObs() {
+        return obs;
+    }
+
+    public List<Object> getObsLeftLog() {
+        return obsLeftLog;
+    }
+
+    public List<Object> getObsLog() {
+        return obsLog;
+    }
+
+    public Integer getObsPlaced() {
+        return obsPlaced;
+    }
+
+    public Integer getPartyId() {
+        return partyId;
+    }
+
+    public List<Object> getPermanentBuffs() {
+        return permanentBuffs;
+    }
+
+    public Integer getPings() {
+        return pings;
+    }
+
+    public Purchase getPurchase() {
+        return purchase;
+    }
+
+    public List<Object> getPurchaseLog() {
+        return purchaseLog;
+    }
+
+    public Integer getRunePickups() {
+        return runePickups;
+    }
+
+    public Runes getRunes() {
+        return runes;
+    }
+
+    public List<Object> getRunesLog() {
+        return runesLog;
+    }
+
+    public Sen getSen() {
+        return sen;
+    }
+
+    public List<Object> getSenLeftLog() {
+        return senLeftLog;
+    }
+
+    public List<Object> getSenLog() {
+        return senLog;
+    }
+
+    public Integer getSenPlaced() {
+        return senPlaced;
+    }
+
+    public Double getStuns() {
+        return stuns;
+    }
+
+    public List<Object> getTimes() {
+        return times;
+    }
+
+    public Integer getTowerDamage() {
+        return towerDamage;
+    }
+
+    public Integer getXpPerMin() {
+        return xpPerMin;
+    }
+
+    public XpReasons getXpReasons() {
+        return xpReasons;
+    }
+
+    public List<Object> getXpT() {
+        return xpT;
+    }
+
+    public String getPersonaname() {
+        return personaname;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public String getLastLogin() {
+        return lastLogin;
+    }
+
+    public Boolean getRadiantWin() {
+        return radiantWin;
+    }
+
+    public Integer getStartTime() {
+        return startTime;
+    }
+
+    public Integer getDuration() {
+        return duration;
+    }
+
+    public Integer getCluster() {
+        return cluster;
+    }
+
+    public Integer getLobbyType() {
+        return lobbyType;
+    }
+
+    public Integer getGameMode() {
+        return gameMode;
+    }
+
+    public Integer getPatch() {
+        return patch;
+    }
+
+    public Integer getRegion() {
+        return region;
+    }
+
+    public Boolean getRadiant() {
+        return isRadiant;
+    }
+
+    public Integer getWin() {
+        return win;
+    }
+
+    public Integer getLose() {
+        return lose;
+    }
+
+    public Integer getTotalGold() {
+        return totalGold;
+    }
+
+    public Integer getTotalXp() {
+        return totalXp;
+    }
+
+    public Double getKillsPerMin() {
+        return killsPerMin;
+    }
+
+    public Integer getKda() {
+        return kda;
+    }
+
+    public Integer getAbandons() {
+        return abandons;
+    }
+
+    public Integer getNeutralKills() {
+        return neutralKills;
+    }
+
+    public Integer getTowerKills() {
+        return towerKills;
+    }
+
+    public Integer getCourierKills() {
+        return courierKills;
+    }
+
+    public Integer getLaneKills() {
+        return laneKills;
+    }
+
+    public Integer getHeroKills() {
+        return heroKills;
+    }
+
+    public Integer getObserverKills() {
+        return observerKills;
+    }
+
+    public Integer getSentryKills() {
+        return sentryKills;
+    }
+
+    public Integer getRoshanKills() {
+        return roshanKills;
+    }
+
+    public Integer getNecronomiconKills() {
+        return necronomiconKills;
+    }
+
+    public Integer getAncientKills() {
+        return ancientKills;
+    }
+
+    public Integer getBuybackCount() {
+        return buybackCount;
+    }
+
+    public Integer getObserverUses() {
+        return observerUses;
+    }
+
+    public Integer getSentryUses() {
+        return sentryUses;
+    }
+
+    public Double getLaneEfficiency() {
+        return laneEfficiency;
+    }
+
+    public Double getLaneEfficiencyPct() {
+        return laneEfficiencyPct;
+    }
+
+    public Integer getLane() {
+        return lane;
+    }
+
+    public Integer getLaneRole() {
+        return laneRole;
+    }
+
+    public Boolean getRoaming() {
+        return isRoaming;
+    }
+
+    public Map<String, Integer> getPurchaseTime() {
+        return purchaseTime;
+    }
+
+    public Item getFirstPurchaseTime() {
+        return firstPurchaseTime;
+    }
+
+    public Item getItemWin() {
+        return itemWin;
+    }
+
+    public Item getItemUsage() {
+        return itemUsage;
+    }
+
+    public Integer getPurchaseTpscroll() {
+        return purchaseTpscroll;
+    }
+
+    public Integer getActionsPerMin() {
+        return actionsPerMin;
+    }
+
+    public Integer getLifeStateDead() {
+        return lifeStateDead;
+    }
+
+    public String getSoloCompetitiveRank() {
+        return soloCompetitiveRank;
+    }
+
+    public List<Object> getCosmetics() {
+        return cosmetics;
+    }
+
+    public Map<String, Benchmarks> getBenchmarks() {
+        return benchmarks;
+    }
 
 
 }
